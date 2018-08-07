@@ -192,7 +192,11 @@
   display: inline-block;
   line-height: 1em;
 }
-
+    @media only screen and (min-width: 1000px) {
+        .col-sm-4{
+            margin-left: 4%;
+        }
+    }
 
   </style>
 </head>
@@ -230,8 +234,8 @@
   </span>
 </h1>
     <div class="col-sm-4"></div>
-    <div class="col-sm-4 text-center">
-        <h4 id="animate2" style="margin:auto;display:none;">I 'm a <strong>Software Engineer</strong><br> and <strong>Full-stack Web Developer</strong></h4>          
+    <div class="col-sm-4 text-center" style="display:block;margin:0px auto;">
+        <h4 id="animate2" style="display:none;">I 'm a <strong>Software Engineer</strong><br> and <strong>Full-stack Web Developer</strong></h4>          
     </div>
     <div class="col-sm-4"></div>
   <br><br><br>
@@ -495,10 +499,10 @@ $(document).ready(function(){
     that.css('margin','auto');
     setTimeout(function() {  
         that.show();
-        that.animate({left: '+=7%'});
-        that.animate({left: '-=9%'});
-        that.animate({left: '+=4%'});
-        that.animate({left: '-=2%'});
+        that.animate({left: '+=7%'},"fast");
+        that.animate({left: '-=9%'},"fast");
+        that.animate({left: '+=4%'},"fast");
+        that.animate({left: '-=2%'},"fast");
         
         that.element.click();
     }, 1500);
