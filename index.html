@@ -194,8 +194,17 @@
   line-height: 1em;
 }
     @media only screen and (min-width: 1000px) {
-        .col-sm-4{
+        .middle{
             margin-left: 4%;
+        }
+    }
+
+    @media only screen and (max-width: 800px){
+        .margin{
+            margin-bottom: 0px;
+        }
+        .col-sm-4 p{
+            padding-bottom: 20px;
         }
     }
 
@@ -234,11 +243,11 @@
     <span class="letters" style="display:none" id="animate1">Hello my name is Robin</span>
   </span>
 </h1>
-    <div class="col-sm-4 col-md-4"></div>
-    <div class="col-sm-4 col-md-4 text-center" style="display:block;margin:0px auto;">
+    <div class="col-sm-4 col-md-4 middle"></div>
+    <div class="col-sm-4 col-md-4 text-center middle" style="display:block;margin:0px auto;">
         <h4 id="animate2" style="display:none;">I 'm a <strong>Software Engineer</strong><br> and <strong>Full-stack Web Developer</strong></h4>          
     </div>
-    <div class="col-sm-4 col-md-4"></div>
+    <div class="col-sm-4 col-md-4 middle"></div>
   <br><br><br>
   <img src="robin.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="300">
 </div>
